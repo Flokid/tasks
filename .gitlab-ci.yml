@@ -1,0 +1,15 @@
+stages:
+  - build
+
+variables:
+  APP_ARGUMENT: "--your-default-argument"
+
+build:
+  stage: build
+  script:
+    - pip install -r requirements.txt
+    - python task13/main.py $APP_ARGUMENT
+    - python task13/main
+  artifacts:
+    paths:
+      - generated_password.txt
