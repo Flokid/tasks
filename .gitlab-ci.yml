@@ -2,7 +2,7 @@ stages:
   - build
 
 variables:
-  APP_ARGUMENT: "--your-default-argument"
+  APP_ARGUMENT: 12
 
 build:
   stage: build
